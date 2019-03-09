@@ -1,0 +1,10 @@
+{
+  "/api/*": "/$1",
+   "/Employees": "/employees",
+  "/Employees\\?id=:id": "/employees/:id",
+  "/Employees/:id": "/employees/:id",
+  "/Employees/:name": "/employees?name_like=:name",
+  "/Delete/:id": "/employees/:id",
+  "/Employee": "/employees/:resource/:id"
+  
+}

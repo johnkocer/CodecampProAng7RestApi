@@ -1,0 +1,29 @@
+<div class="container-fluid text-center bg-light">
+  <h2 class="bg-primary text-white p-1">Welcome to {{ title }}!</h2>
+  <div class="bg-light ">
+    <nav>
+      <a [routerLink]="['/home']">
+        <span class="glyphicon glyphicon-home"></span> Home
+      </a>
+      |
+      <a [routerLink]="['/employee']" routerLinkActive="active">
+        <span class="glyphicon glyphicon-home"></span> Employee
+      </a>
+      |
+      <a [routerLink]="['/about']" routerLinkActive="active">
+        <span class="glyphicon glyphicon-home"></span> About
+      </a>
+      |
+      <a [routerLink]="['/contact']" routerLinkActive="active">
+        <span class="glyphicon glyphicon-home"></span> Contact
+      </a>
+    </nav>
+  </div>
+  <!-- <hr class="border-danger" /> -->
+  <router-outlet></router-outlet>
+
+  <div class="bg-primary  text-white mt-1">
+    © 2019 - SmartIT.CodeCamp
+  </div>
+  <hr>
+</div>

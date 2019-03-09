@@ -1,0 +1,18 @@
+<div class="col">
+    <fieldset>
+      <legend class="font-weight-bold">
+        {{ todo.name | uppercase }} Details
+      </legend>
+      <div>
+        <span class="font-weight-bold">id: </span>{{ todo.id }} <br />
+        <input class="todos" [(ngModel)]="todo.name" placeholder="name" />
+        <br />
+        <button class="btn-success mr-5" (click)="update(todo)">
+          Update
+        </button>
+        <button class="btn-danger" (click)="delete(todo)">
+          Delete
+        </button>
+      </div>
+    </fieldset>
+  </div>

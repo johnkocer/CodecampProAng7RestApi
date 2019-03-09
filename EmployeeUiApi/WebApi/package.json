@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "json-server": "^0.12.1"
+  },
+  "devDependencies": {
+    "lite-server": "2.3.0"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "json": "json-server --p 5000 --watch db.json --routes routes.json"
+  }
+}
